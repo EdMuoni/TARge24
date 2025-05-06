@@ -1,0 +1,78 @@
+
+<div class= "mat-card" style="display:flex; flex-direction: row">
+    <mat-card class="mat-card count-card bg-success">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card count-card bg-warning">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card count-card bg-info">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-card count-card bg-primary">
+        <mat-card-title>Num of Cards</mat-card-title>
+        <mat-card-content>10</mat-card-content>
+    </mat-card>
+
+</div>
+
+<mat-card class="mat-card">
+    <mat-card-header>
+        <mat-card-title>Listing All Credit Cards</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+       <table mat-table [dataSource]="dataSource" matSort>
+            <mg-container matColumnDef="select">
+                <th mat-header-cell *matHeaderCellDef></th>
+                <td mat-cell *matCellDef="let row">
+                    <mat-checkbox></mat-checkbox>
+                </td>
+            </mg-container>
+            <mat-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>Id</th>
+                <td mat-cell *matCellDef="let element">{{element.id}}</td>
+            </mat-container>
+            <mat-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef>name</th>
+                <td mat-cell *matCellDef="let element">{{element.name}}</td>
+            </mat-container>
+            <mat-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef>description</th>
+                <td mat-cell *matCellDef="let element">{{element.description}}</td>
+            </mat-container>
+            <mat-container matColumnDef="bankName">
+                <th mat-header-cell *matHeaderCellDef>Bank Name</th>
+                <td mat-cell *matCellDef="let element">{{element.bankName}}</td>
+            </mat-container>
+            <mat-container matColumnDef="maxCredit">
+                <th mat-header-cell *matHeaderCellDef>Max Credit</th>
+                <td mat-cell *matCellDef="let element">{{element.maxCredit}}</td>
+            </mat-container>
+            <mat-container matColumnDef="interestRate">
+                <th mat-header-cell *matHeaderCellDef>Interest Rate</th>
+                <td mat-cell *matCellDef="let element">{{element.interestRate}}</td>
+            </mat-container>
+            <mat-container matColumnDef="active">
+                <th mat-header-cell *matHeaderCellDef>active</th>
+                <td mat-cell *matCellDef="let element">{{element.active}}</td>
+            </mat-container>            
+            <mat-container matColumnDef="recommendedScore">
+                <th mat-header-cell *matHeaderCellDef>Recommended Score</th>
+                <td mat-cell *matCellDef="let element">{{element.recommendedScore}}</td>
+            </mat-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayColumns"></tr> 
+            <tr mat-row *matRowDef="let row; columns: displayColumns;"></tr>
+       </table>
+       <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]" 
+       showFirstLastButtons>
+       </mat-paginator>
+    </mat-card-content>
+</mat-card>
+

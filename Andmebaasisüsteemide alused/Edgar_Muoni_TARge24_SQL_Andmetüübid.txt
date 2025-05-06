@@ -1,0 +1,140 @@
+Andmetüübid ja nende kohta kirjeldus:
+
+1. Numbrilised andmetüübid
+MySQL toetab kõiki standardseid SQL-i numbrilisi andmetüüpe. Nende tüüpide hulka kuuluvad nii täpsed numbrilised andmetüübid (INTEGER, SMALLINT, DECIMAL ja NUMERIC) kui ka ligikaudsed numbrilised andmetüübid (FLOAT, REAL ja DOUBLE PRECISION). Võtmesõna INT on INTEGERi sünonüüm ning võtmesõnad DEC ja FIXED on DECIMALi sünonüümid. MySQL käsitleb DOUBLE'i kui DOUBLE PRECISIONi sünonüümi (mittestandardne laiendus). MySQL käsitleb ka REALi kui DOUBLE PRECISIONi sünonüümi (mittestandardne laiendus), välja arvatud juhul, kui REAL_AS_FLOAT SQL-režiim on lubatud.
+
+Numbrilisi andmetüüpe kasutatakse arvväärtuste, sealhulgas täisarvude ja kümnendarvude salvestamiseks. MySQL kasutab kõiki ANSI SQLi standardseid numbrilisi andmetüüpe.
+
+Järgnevas loetelus on esitatud MySQLi üldised numbrilised andmetüübid ja nende kirjeldused :
+
+INT - normaalsuuruses täisarv, mis võib olla märgistatud või märkimata. Kui see on allkirjastatud, on lubatud vahemik -2147483648 kuni 2147483647. Kui see on märkimata, on lubatud vahemik 0 kuni 4294967295. Saate määrata kuni 11-kohalise laiuse.
+
+TINYINT - väga väike täisarv, mis võib olla nii märgistatud kui ka märkimata. Kui see on märgistatud, on lubatud vahemik -128 kuni 127. Kui see on märkimata, on lubatud vahemik 0 kuni 255. Laiuseks võib määrata kuni 4 numbrit.
+
+SMALLINT - Väike täisarv, mis võib olla märgistatud või märkimata. Kui see on märgistatud, on lubatud vahemik -32768 kuni 32767. Kui märkimata, on lubatud vahemik 0 kuni 65535. Saate määrata kuni 5-kohalise laiuse.
+
+MEDIUMINT - Keskmise suurusega täisarv, mis võib olla märgistatud või märkimata. Kui see on märgistatud, on lubatud vahemik -8388608 kuni 8388607. Kui märkimata, on lubatud vahemik 0 kuni 16777215. Laiuseks võib määrata kuni 9 numbrit.
+
+BIGINT - suur täisarv, mis võib olla märgistatud või märkimata. Kui märkega, on lubatud vahemik -9223372036854775808 kuni 9223372036854775807. Kui märkimata, on lubatud vahemik 0 kuni 18446744073709551615. Saate määrata kuni 20-kohalise laiuse.
+
+FLOAT(M,D) - ujukomaarv, mis ei saa olla märkimata. Saate määratleda näitamise pikkuse (M) ja kümnendkohtade arvu (D). See ei ole kohustuslik ja vaikimisi on 10,2, kus 2 on kümnendkohtade arv ja 10 on kogu numbrite arv (koos kümnendkohtadega). FLOATi puhul võib kümnendkohtade täpsus ulatuda 24 kohani.
+
+DOUBLE(M,D) - Kahekordse täpsusega ujukomaarv, mis ei saa olla märkimata. Saate määratleda näitamise pikkuse (M) ja kümnendkohtade arvu (D). See ei ole vajalik ja vaikimisi on 16,4, kus 4 on kümnendkohtade arv. Kümnendkohtade täpsus võib DOUBLE puhul ulatuda 53 kohani. REAL on DOUBLE'i sünonüüm.
+
+DECIMAL(M,D) - Pakkimata ujukomaarv, mis ei saa olla märkimata. Pakkimata kümnendarvudes vastab iga kümnendarv ühele baidile. Vajalik on määrata näitamise pikkus (M) ja kümnendkohtade arv (D). NUMERIC on DECIMALi sünonüüm.
+
+2. Kuupäeva ja kellaaja andmetüübid
+Kuupäeva ja kellaaja andmetüüpe MySQLis kasutatakse ajaliste andmete, sealhulgas kuupäevade, kellaaegade ja nende kombinatsioonide salvestamiseks. Need andmetüübid on olulised kuupäevaga ja ajaga seotud teabe täpseks käsitlemiseks.
+
+MySQLi kuupäeva- ja kellaaja andmetüübid on järgmised:
+
+DATE - kuupäev vormingus YYYY-MM-DD, vahemikus 1000-01-01 ja 9999-12-31. Näiteks 30. detsember 1973 salvestatakse kujul 1973-12-30.
+
+DATETIME - kuupäeva ja kellaaja kombinatsioon JAAJ-MM-TKT TUNN:MM:SS formaadis, vahemikus 1000-01-01 00:00:00 ja 9999-12-31 23:59:59. Näiteks 30. detsembril 1973 kell 3:30 pärastlõunal salvestatakse 1973-12-30 15:30:00.
+
+TIMESTAMP - ajatempel 1. jaanuari 1970. aasta kesköö ja 2037. aasta kesköö vahel. See näeb välja nagu eelmine DATETIME-vorming, ainult ilma sidekriipsuta numbrite vahel; 30. detsembri 1973. aasta pärastlõunal kell 15:30 salvestatakse kujul 19731230153000 ( AAAJAKKMMPPKKMMSS ).
+
+TIME - salvestab kellaaja TUNN:MM:SS-vormingus.
+
+YEAR(M) - salvestab aastaarvu kahe- või neljakohalises formaadis. Kui pikkuseks on määratud 2 (näiteks YEAR(2)), võib YEAR olla vahemikus 1970-2069 (70-69). Kui pikkus on määratud 4, siis võib YEAR olla 1901 kuni 2155. Vaikimisi pikkus on 4.
+
+3. Stringi andmetüübid
+String andmetüüpe MySQLis kasutatakse teksti ja tähemärgipõhise teabe salvestamiseks. Need andmetüübid salvestavad erineva pikkuse ja formaadiga tekstilisi andmeid.
+
+Järgnevas loetelus kirjeldatakse MySQLis levinud string-andmetüüpe -
+
+CHAR(M) - fikseeritud pikkusega string pikkusega 1 kuni 255 märki (näiteks CHAR(5)), mis salvestamisel täidetakse paremale tühikutega määratud pikkusele. Pikkuse määramine ei ole kohustuslik, kuid vaikimisi on 1.
+
+VARCHAR(M) - muutuva pikkusega string pikkusega 1 kuni 255 tähemärki. Näiteks VARCHAR(25). VARCHAR-välja loomisel tuleb määrata pikkus.
+
+BLOB või TEXT - väli, mille maksimaalne pikkus on 65535 tähemärki. BLOBid on „Binary Large Objects“ ja neid kasutatakse suure hulga binaarsete andmete, näiteks piltide või muud tüüpi failide salvestamiseks. TEXTina määratletud väljad sisaldavad samuti suuri andmemahte. Nende kahe erinevus seisneb selles, et BLOBide puhul on salvestatud andmete sorteerimine ja võrdlemine sõltuvuses suur- ja väiketähest, TEXT-väljade puhul aga mitte. BLOB- või TEXT-väljade puhul ei määrata pikkust.
+
+TINYBLOB või TINYTEXT - BLOB- või TEXT-veerg, mille maksimaalne pikkus on 255 tähemärki. TINYBLOB või TINYTEXT puhul ei määrata pikkust.
+
+MEDIUMBLOB või MEDIUMTEXT - BLOB või TEXT veerg, mille maksimaalne pikkus on 16777215 tähemärki. MEDIUMBLOB või MEDIUMTEXT puhul ei määrata pikkust.
+
+LONGBLOB või LONGTEXT - BLOB või TEXT veerg, mille maksimaalne pikkus on 4294967295 tähemärki. LONGBLOB või LONGTEXT puhul ei määrata pikkust.
+
+ENUM - loend, mis on väljamõeldud termin loetelu jaoks. ENUMi määratlemisel loote elementide loendi, millest tuleb valida väärtus (või see võib olla NULL). Näiteks kui te tahaksite, et teie väli sisaldaks „A“ või „B“ või „C“, siis määratleksite ENUMi kui ENUM („A“, „B“, „C“) ja ainult need väärtused (või NULL) võiksid seda välja täita.
+
+4. MySQL Varchar andmetüüp
+MySQLi andmetüüpi VARCHAR kasutatakse muutuva pikkusega tähemärkide salvestamiseks, mille pikkus on kuni 65 535 baiti.
+
+Kui MySQLis salvestate teksti VARCHAR veergu, vajab see veidi lisaruumi, et jälgida, kui pikk on tekst. See lisaruum võib olla kas 1 või 2 baiti, sõltuvalt teksti pikkusest. Kui tekst on lühike (alla 255 tähemärgi), kasutab ta pikkuseks 1 baiti. Pikema teksti puhul kasutatakse 2 baiti.
+
+Andmete kogusuurus koos pikkuse infoga ei tohi ületada 65 535 baiti tabeli rea puhul.
+
+5. Boolean
+Boole'i andmetüüpi kasutatakse loogika ja Boole'i algebra tõeväärtuste esitamiseks. Sellel on kaks võimalikku väärtust: kas tõene või väär.
+MySQLis ei ole sisseehitatud Boolean või Bool andmetüüpi. Selle asemel pakub MySQL meile Boole'i väärtuste salvestamiseks andmetüüpi TINYINT.
+
+6. ENUM
+ENUM (Enumerator) on kasutaja määratletud andmetüüp, mis salvestab väärtuste loendi stringidena. Need väärtused määratakse ENUM-samba määratlemisel. Kasutaja saab väärtusi sellesse veergu sisestades valida väärtused sellest eelnevalt määratletud loendist.
+Igale ENUM-sarjas määratletud string-väärtusele määratakse kaudselt numbriline väärtus, mis algab numbrist 1. MySQL kasutab neid numbrilisi väärtusi sisemiselt ENUM-väärtuste esitamiseks.
+
+7. MySQLi kümnendsüsteemi andmetüüp
+MySQLi andmetüüpi DECIMAL kasutatakse kümnendkohtadega arvväärtuste salvestamiseks. See võimaldab täpseid arvutusi ja seda saab konfigureerida nii, et see salvestab kindlaksmääratud arvu numbreid enne ja pärast koma punkti.
+
+Me kasutame seda andmetüüpi sageli veergude jaoks, mis nõuavad täpsust, näiteks töötajate palgad, töötajate PF-saldod jne.
+
+8. MySQL INT andmetüüp
+MySQL INT andmetüüpi kasutatakse täisarvude (täisarvud) salvestamiseks ilma kümnendkohtadeta.
+
+MySQL pakub siiski erinevaid täisarvude andmetüüpe, näiteks TINYINT, SMALLINT, MEDIUMINT ja BIGINT, et rahuldada erinevaid täisarvude vahemikke.
+
+9. Andmetüüp FLOAT
+Andmetüüp FLOAT on osa numbrilisest andmetüübist. Numbrilisi andmetüüpe kasutatakse arvude salvestamiseks ja neid saab liigitada erinevateks alatüüpideks nende omaduste, näiteks salvestusmahu ja täpsuse alusel.
+
+MySQLi andmetüüp FLOAT on ujukomaarvu tüüp, mis salvestab ligikaudseid arvväärtusi. See salvestab ligikaudseid arvväärtusi 4 baidi ulatuses ja kujutab endast ühe täpsusega väärtusi.
+
+FLOAT sobib paljude arvväärtuste jaoks, kuid salvestab neid ligikaudselt IEEE 754 standardi piirangute tõttu.
+
+10. MySQL BIT andmetüüp
+MySQLi BIT-andmetüüpi kasutatakse binaarväärtuste salvestamiseks kindlaksmääratud vahemikus. Vahemik määratakse kindlaks BIT-väljale eraldatud bittide arvuga.
+
+Kui me üritame sisestada BIT-väärtuste asemel täisarvu väärtust, teisendab MySQL need automaatselt BIT-väärtusteks. Me peame tagama, et täisarvuline väärtus, mida me lisame, peab olema BIT-väärtusteks teisendamise vahemikus.
+
+Näiteks kui meil on BIT(3) veerg, siis võib see salvestada väärtusi 000 kuni 111 binaarselt, mis vastab 0 kuni 7 täisarvu formaadis. Kui püüate sellesse BIT(3)-veergu sisestada täisarvu 8, saate vea, sest 8 on binaarselt 1000, mis jääb väljapoole veeru kehtivat vahemikku.
+
+11. MySQL TINYINT andmetüüp
+MySQLi andmetüüpi TINYINT kasutatakse täisarvuliste väärtuste salvestamiseks väga väikeses vahemikus. See võtab vaid 1 baidi (8 bitti) salvestusruumi ja võib hoida väärtusi vahemikus -128 kuni 127 (signed TINYINT) või 0 kuni 255 (unsigned TINYINT).
+
+Kui MySQLis defineeritakse TINYINT veerg, loetakse seda vaikimisi SIGNED veergu. See tähendab, et see võib hoida nii positiivseid kui ka negatiivseid numbreid teatud vahemikus. Lisaks võite sellise veeru defineerimiseks kasutada kas „TINYINT“ või „INT1“, sest need töötavad samamoodi.
+
+12. MySQL BLOBi andmetüüp
+MySQLi BLOB (Binary Large Object) andmetüüpi kasutatakse binaarsete andmete, näiteks piltide, heli, video või mis tahes muud tüüpi binaarfailide salvestamiseks. BLOB-veergudes saab salvestada muutuva pikkusega binaarseid andmeid, mistõttu sobib see eri suurusega failide käsitlemiseks.
+
+Mõelge rakendusele, mis kogub kasutaja andmeid vormide kaudu. See teave võib sisaldada isikuandmeid, nagu nimi ja aadress, koos pilditõenditega, nagu PAN-kaart või AADHAR-kaart. Selle asemel, et hallata neid faile eraldi failisüsteemis, saate neid salvestada BLOBidena MySQLi andmebaasis.
+
+13. MySQL SET andmetüüp
+MySQLi andmetüüpi SET kasutatakse eelnevalt määratud väärtuste loetelust valitud väärtuste kogumi salvestamiseks. Iga SET-andmetüübi veerg võib sisaldada nulli või rohkem väärtusi, mis on valitud selle väärtuste loetelust. Need väärtused määratakse andmete sisestamisel või uuendamisel komadega eraldatud loeteluna.
+
+Oluline on märkida, et loend väärtustest, mida saab salvestada SET-väljale, määratakse kindlaks tabeli loomise ajal ja kõik sellest loendist väljapoole jäävad väärtused ei ole lubatud.
+
+14. MySQL regulaaravaldised
+Regulaaravaldis on vabalt defineeritud kui tähemärkide jada, mis kujutab sisendteksti mustrit. Seda kasutatakse tekstisõnade leidmiseks või asendamiseks, kasutades teatavaid mustreid; see muster võib olla kas üksikmärk, mitu märki või sõna jne.
+MySQL rakendab regulaaravaldiste tuge, kasutades ICU (International Components for Unicode), mis pakub täielikku Unicode-tuge ja on mitme baidi turvaline.
+MySQLis on see võimas viis keeruliste otsinguoperatsioonide teostamiseks andmebaasis, et saada soovitud sisu. Ja erinevalt LIKE-operaatorist ei ole regulaaravaldised piiratud otsingumustritega (nagu % ja _), kuna nad kasutavad mitmeid teisi metamärke, et laiendada paindlikkust ja kontrolli mustri sobitamise ajal. Selleks kasutatakse REGEXP-operaatorit.
+
+15. MySQL RLIKE operaator
+MySQL-i RLIKE-operaatorit kasutatakse andmete otsimiseks andmebaasis, kasutades mustreid (või regulaarseid väljendeid), mida nimetatakse ka mustri sobitamiseks. Teisisõnu kasutatakse RLIKE-operaatorit selleks, et teha kindlaks, kas antud regulaarväljend vastab tabeli kirjele või mitte. Ta tagastab 1, kui kirje vastab, ja vastasel juhul 0.
+
+Regulaaravaldis on defineeritud kui tähemärkide jada, mis kujutab sisendteksti mustrit. Seda kasutatakse tekstisõnade leidmiseks või asendamiseks, kasutades teatavaid mustreid; see muster võib olla kas üks/mitu märki või sõna jne.
+Selle operaatori funktsioon on samaväärne MySQL-i REGEXP-operaatoriga ja seda kasutatakse tavaliselt teatud kriteeriumidele vastavate konkreetsete mustrite otsimiseks.
+
+Kasutatud allikad:
+https://dev.mysql.com/doc/refman/8.0/en/numeric-types.html
+https://dev.mysql.com/doc/refman/8.0/en/numeric-type-syntax.html
+https://www.tutorialspoint.com/mysql/mysql-data-types.htm
+https://www.tutorialspoint.com/mysql/mysql-varchar.htm
+https://www.tutorialspoint.com/mysql/mysql-boolean.htm
+https://www.tutorialspoint.com/mysql/mysql-enum.htm
+https://www.tutorialspoint.com/mysql/mysql-decimal.htm
+https://www.tutorialspoint.com/mysql/mysql-int.htm
+https://www.tutorialspoint.com/mysql/mysql-float.htm
+https://www.tutorialspoint.com/mysql/mysql-bit.htm
+https://www.tutorialspoint.com/mysql/mysql-tinyint.htm
+https://www.tutorialspoint.com/mysql/mysql-blob.htm
+https://www.tutorialspoint.com/mysql/mysql-regexps.htm
+https://www.tutorialspoint.com/mysql/mysql-rlike-operator.htm
+

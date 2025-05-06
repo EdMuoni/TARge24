@@ -1,0 +1,25 @@
+Andmebaasi ülesse laadimine ja päringud.
+
+Tegevused tabelitega ja kõik koodiga teha, kui ei ole teistmoodi öeldud.
+Laadi andmed csv failist–ist uude andmebaasi.
+Muuda tabeli struktuuri nõnda, et see vastaks nõuetele. 
+Pärast saata mulle SQL päringufail ja Andmebaasi koopia.
+Õppematerjalide all on olemas fail Andmed ja Päringu küsimused
+
+Päringud koodiga:
+    1. Id tuleb sisestada koodiga, aga esimeseks veeruks võib teha ilma koodita.
+    2. Muuda veerud: Nimi nvarchar(25), Linn nvarchar(25), Aadress nvarchar(30), Telefon nvarchar(12) ja Sugu varchar(1) peale.
+    3. Muuta kõik P?rnu ja p?rnu vastavalt Pärnu ja pärnu-ks. Kui kirjutate koodiga, siis panna tingimusele vastamise stringi 'Prnu' või 'prnu'.
+    4. Kõikide inimeste nimed, mis sisaldavad k tähte
+    5. Kuva inimeste loetelu, kellel puudub nimi
+    6. Kõik mehed, kes elavad Pärnus
+    7. Kõik kirjed, kus aadressid puuduvad
+    8. Kirjed, kus telefon puudub
+    9. Inimesed kelle palganumber on 0.
+    10. Inimesed, kelle palganumber on 0 või kelle palga kohal on tühi koht
+    11. Inimesed, kes elavad linnades mille nimi sisaldab”-” märki
+    12. Inimesed, kes on sündinud vahemikus 01.01.1982 kuni 01.01.1992
+    13. Inimesed, kes on sündinud enne 1900-12-31
+    14. 10 kõige nooremat inimest
+    15. Kõikide töötajate palgafond arvutada kokku
+    16. Linnade kaupa palgafond kokku arvutada

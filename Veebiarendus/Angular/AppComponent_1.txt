@@ -1,0 +1,9 @@
+<mat-drawer-container class="content-container">
+  <mat-drawer mode="side" [opened]="sidebarOpen" class="sidebar">
+    Sidebar
+  </mat-drawer>
+  <mat-drawer-container class="main-content">
+    <h1>Credit Card Admin Portal</h1>
+    <router-outlet></router-outlet>
+  </mat-drawer-container>
+</mat-drawer-container>
