@@ -90,6 +90,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\9ab35c9b-c3d1-4f69-a5a6-34a0a7d63b92_ViratKohli.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdvancedAjax</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdvancedAjax</BasePath>
+      <RelativePath>Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pl3bg4zkji</Fingerprint>
+      <Integrity>/bbjLmhu0aRiIxSza55ECAshn4ycZIqHpN/wIv15HCY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\noimage.png'))">
       <SourceType>Package</SourceType>
       <SourceId>AdvancedAjax</SourceId>
@@ -120,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3hpf4dawmz</Fingerprint>
-      <Integrity>t6Yc2KWV5ApqHXe72W6/UJqMoT1qhq7P0hv2uGyl0/E=</Integrity>
+      <Fingerprint>8dcpp6l9f3</Fingerprint>
+      <Integrity>3CsqFK8nqck12nhPmjvNNMnmxStQN6tUN+XFUbKPJiI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>

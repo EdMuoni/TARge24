@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg",
+      "AssetFile": "Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bbjLmhu0aRiIxSza55ECAshn4ycZIqHpN/wIv15HCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:08:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/bbjLmhu0aRiIxSza55ECAshn4ycZIqHpN/wIv15HCY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.pl3bg4zkji.jpg",
+      "AssetFile": "Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/bbjLmhu0aRiIxSza55ECAshn4ycZIqHpN/wIv15HCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:08:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pl3bg4zkji"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/bbjLmhu0aRiIxSza55ECAshn4ycZIqHpN/wIv15HCY="
+        },
+        {
+          "Name": "label",
+          "Value": "Images/f94a8dc6-7e77-4041-a018-3acffce5830a_ViratKohli.jpg"
+        }
+      ]
+    },
+    {
       "Route": "Images/noimage.png",
       "AssetFile": "Images/noimage.png",
       "Selectors": [],
@@ -495,7 +577,7 @@
       ]
     },
     {
-      "Route": "js/site.3hpf4dawmz.js",
+      "Route": "js/site.8dcpp6l9f3.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -509,7 +591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2458"
+          "Value": "3480"
         },
         {
           "Name": "Content-Type",
@@ -517,21 +599,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t6Yc2KWV5ApqHXe72W6/UJqMoT1qhq7P0hv2uGyl0/E=\""
+          "Value": "\"3CsqFK8nqck12nhPmjvNNMnmxStQN6tUN+XFUbKPJiI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 21:21:14 GMT"
+          "Value": "Wed, 21 May 2025 22:30:43 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3hpf4dawmz"
+          "Value": "8dcpp6l9f3"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t6Yc2KWV5ApqHXe72W6/UJqMoT1qhq7P0hv2uGyl0/E="
+          "Value": "sha256-3CsqFK8nqck12nhPmjvNNMnmxStQN6tUN+XFUbKPJiI="
         },
         {
           "Name": "label",
@@ -554,7 +636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2458"
+          "Value": "3480"
         },
         {
           "Name": "Content-Type",
@@ -562,17 +644,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t6Yc2KWV5ApqHXe72W6/UJqMoT1qhq7P0hv2uGyl0/E=\""
+          "Value": "\"3CsqFK8nqck12nhPmjvNNMnmxStQN6tUN+XFUbKPJiI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 21 May 2025 21:21:14 GMT"
+          "Value": "Wed, 21 May 2025 22:30:43 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t6Yc2KWV5ApqHXe72W6/UJqMoT1qhq7P0hv2uGyl0/E="
+          "Value": "sha256-3CsqFK8nqck12nhPmjvNNMnmxStQN6tUN+XFUbKPJiI="
         }
       ]
     },
