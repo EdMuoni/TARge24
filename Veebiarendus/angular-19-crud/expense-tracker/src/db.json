@@ -1,0 +1,13 @@
+{
+
+  "expenses": [
+
+      {"id": 1, "title": "Restaurant 1", "category": "Food", "amount": 50,"date": "2023-01-01"},
+      {"id": 2, "title": "Grocery Store", "category": "Groceries", "amount": 100,"date": "2023-01-02"},
+      {"id": 3, "title": "Gym Membership", "category": "Health", "amount": 30,"date": "2023-01-03"},
+      {"id": 4, "title": "Movie Tickets", "category": "Entertainment", "amount": 20,"date": "2023-01-04"},
+      {"id": 5, "title": "Book Purchase", "category": "Education", "amount": 15,"date": "2023-01-05"},
+      {"id": 6, "title": "Gas Station", "category": "Transport", "amount": 40,"date": "2023-01-06"}
+  ]
+
+}

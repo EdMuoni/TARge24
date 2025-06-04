@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OD0Yz4FEftKwUFpvVwX+3zko90WVLEjbg0S3cD2+9J0=",
+  "Hash": "4Qu/hAEZOPPTkXFuArPP0F88ZVnYAsJv112S1jh3POQ=",
   "Source": "AdvancedAjax",
   "BasePath": "_content/AdvancedAjax",
   "Mode": "Default",
@@ -99,6 +99,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG",
+      "SourceId": "AdvancedAjax",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\",
+      "BasePath": "_content/AdvancedAjax",
+      "RelativePath": "Images/51f49c84-cc04-4782-9de6-6b08c9234243_2#[.{fingerprint}]?.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ob9e4ms2f",
+      "Integrity": "VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg",
+      "SourceId": "AdvancedAjax",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\",
+      "BasePath": "_content/AdvancedAjax",
+      "RelativePath": "Images/56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2106em6gr5",
+      "Integrity": "WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg"
     },
     {
       "Identity": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\97d62f51-0d9d-4491-a0c6-2055f07e05c8_ViratKohli.jpg",
@@ -1771,6 +1813,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/51f49c84-cc04-4782-9de6-6b08c9234243_2.5ob9e4ms2f.PNG",
+      "AssetFile": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:42:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ob9e4ms2f"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG",
+      "AssetFile": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1385708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:42:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA="
+        }
+      ]
+    },
+    {
+      "Route": "Images/56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.2106em6gr5.jpg",
+      "AssetFile": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2106em6gr5"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso="
+        }
+      ]
+    },
+    {
+      "Route": "Images/56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg",
+      "AssetFile": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Veebiarendus\\AdvancedAjax\\wwwroot\\Images\\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 11:10:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso="
         }
       ]
     },

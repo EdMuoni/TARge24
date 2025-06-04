@@ -54,6 +54,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdvancedAjax</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdvancedAjax</BasePath>
+      <RelativePath>Images/51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5ob9e4ms2f</Fingerprint>
+      <Integrity>VWGAEZDpjUAsjena4VCMki1aKjZYGE96/T5HivVKWSA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\51f49c84-cc04-4782-9de6-6b08c9234243_2.PNG'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdvancedAjax</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdvancedAjax</BasePath>
+      <RelativePath>Images/56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2106em6gr5</Fingerprint>
+      <Integrity>WnTdwDlT+yikW2KJSp1LmYcRJ4IWDhGuYB9HDfhILso=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\56d08a86-4e25-4e27-865f-dc168aa8897a_Tom-Cruise-899673630.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\97d62f51-0d9d-4491-a0c6-2055f07e05c8_ViratKohli.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>AdvancedAjax</SourceId>

@@ -1,0 +1,20 @@
+1. Kas simple recoverit on soovitatav kasutada tootmises olevate süsteemide puhul? Millist soovitatakse kasutada?
+2. Milline on kõige lihtsam tagavara ja taastamisevõimalus?
+3. Kas Simple recovery modeli puhul on ülekande logi automaatselt kärbitud?
+4. Mida teeb full recovery varundamine?
+5. Kui suurte andmebaaside juures oleks soovitatav kasutada full recovery varundamist?
+6. Too välja koodinäide, kuidas andmebaas muuta trustworthy on-i peale.
+7. Kasuta enda välja mõeldud andmebaasi puhul täieliku varundamist ja näita tulemust pildi ja koodi näitel.
+8. Kui kasutad eristuvat andmebaasi varundamist. Kas sel juhul peab kõige viimase variandi taastama?
+9. Kasuta enda välja mõeldud andmebaasi peal BACKUP käsklust ja näita tulemust pildi ja koodi näitel.
+10.Kui sul on kaks või rohkem taastamisvõimalusega andmebaasi, mis loogika osas kattuvad. Mida pead sel juhul kasutama?
+11. Kasuta varundamist with format-ga ja näita tulemust pildi ja koodi näitel.
+12. Mis on bulk-logged taastamismudel?
+13. kui palju soovitatakse bulk-logged varundamist kasutada?
+14. Mis juhul saab bulk-logged mudeli taastatud?
+15. Loetle piirnaguid bulk-logged varundamise juures.
+16. Mis oleks parim praktika, kui andmebaas oleks vaja seadistada read-only staatuse peale bulk-logged üleminekul?
+17. Mis juhtub, kui vahetad bulk ja full logi vahel? Mis soovitused pakub materjal selle vahetamisel?
+18. Mis soovitusi jagab materjal full ja bulk-logged-i pealt muuta simple peale?
+19. Tee enda välja mõeldud andmebaasiga muutmine full recovery meetodi peale ja näita tulemust pildi ja koodi näitel.
+ 
