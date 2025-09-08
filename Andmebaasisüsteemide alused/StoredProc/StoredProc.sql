@@ -22,3 +22,6 @@ begin
 	(Salary = @Salary or @Salary is null)
 end
 go
+
+alter table Employees
+add Id int primary key identity

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|c:\\users\\jazztime\\desktop\\targe24\\andmebaasis\u00FCsteemide alused\\storedproc\\storedproc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|solutionrelative:storedproc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|c:\\users\\jazztime\\desktop\\targe24\\andmebaasis\u00FCsteemide alused\\storedproc\\storedproc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|solutionrelative:storedproc\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|c:\\users\\jazztime\\desktop\\targe24\\andmebaasis\u00FCsteemide alused\\storedproc\\storedproc\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03D236B5-B086-45DB-89DE-F78B6E5410A9}|StoredProc\\StoredProc.csproj|solutionrelative:storedproc\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StoredProc\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "StoredProc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T09:04:21.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "StoredProc\\Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "StoredProc\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "StoredProc\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\Jazztime\\Desktop\\TARge24\\Andmebaasis\u00FCsteemide alused\\StoredProc\\StoredProc\\Models\\Employee.cs",
+              "RelativeToolTip": "StoredProc\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T08:18:52.822Z",
+              "WhenOpened": "2025-06-11T07:52:05.154Z",
               "EditorCaption": ""
             }
           ]

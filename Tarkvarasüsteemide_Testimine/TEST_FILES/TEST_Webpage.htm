@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<title>Media Browser - Jedi Server</title>
+<link href="setup.css" rel="stylesheet" type="text/css">
+
+<script language="javascript">
+	function showonlyone(thechosenone) {
+		var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("name");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+		}
+	}
+</script>
+<script>
+function read_pdf(pdffile) 
+{
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+  var myloc = window.location.pathname;
+  var locarray = myloc.split("/");
+  delete locarray[(locarray.length-1)];
+  var arraytext = locarray.join("/")+"en-us/help/readpdf"+" "+pdffile;
+
+  var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile)
+  file.initWithPath("/usr/bin/xterm")
+  var process = Components.classes["@mozilla.org/process/util;1"].createInstance(Components.interfaces.nsIProcess);
+  process.init(file);
+  var args = ["-geometry", "80x59", "-e", arraytext];
+  process.run(true, args, args.length);
+}
+
+function run_script(script) 
+{
+  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+
+  var myloc = window.location.pathname;
+  var locarray = myloc.split("/");
+  delete locarray[(locarray.length-1)];
+  var arraytext = locarray.join("/")+script;
+
+  var file = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile)
+  file.initWithPath("/usr/bin/xterm")
+  var process = Components.classes["@mozilla.org/process/util;1"].createInstance(Components.interfaces.nsIProcess);
+  process.init(file);
+  var args = ["-geometry", "80x40", "-fn", "fixed", "-e", arraytext];
+  process.run(true, args, args.length);
+}
+</script>
+</head>
+
+
+<body>
+<div id="pagewrapper">
+
+	<div id="banner">
+		<a href="javascript:showonlyone('newboxes6');"><img src="images/mge_splash_750x254.png" alt="Jedi Server" width="750" height="254" border="0"></a>
+	</div>
+
+	<div ID="options">
+		<ul ID="flyout">
+			<li><a id="link1" href="javascript:showonlyone('newboxes1');">		<span class="but_title">Read First</span>		<br><span class="but_description">Getting started with Jedi Server.</span></a></li>
+			<li><a id="link2" href="javascript:showonlyone('newboxes2');">		<span class="but_title">Install</span>			<br><span class="but_description">Install products.			</span></a></li>
+			<li><a id="link3" href="javascript:showonlyone('newboxes3');">		<span class="but_title">Documentation</span>	<br><span class="but_description">Review the product documentation.				</span></a></li>
+			<li><a id="link4" href="javascript:showonlyone('newboxes4');">		<span class="but_title">Support</span>			<br><span class="but_description">Information about contacting product support.	</span></a></li>
+			<li><a id="link5" href="javascript:showonlyone('newboxes5');">		<span class="but_title">Resources</span>		<br><span class="but_description">Get additional help online.					</span></a></li>
+		</ul>
+	</div>
+	
+	<div ID="newboxes1" name="newboxes">
+		<p class="headers">Get Started with Jedi Map Server</p>
+			<blockquote class="linkSection">
+			
+				<a class="linkItem" href="./en-us/help/index.html" target="_blank">Installation and Licensing Help</a>
+				<p/>
+				
+				<a class="linkItem" href="./en-us/help/contexthelp/SYSTEM_REQUIREMENTS.htm" target="_blank">System Requirements</a>
+				<p/>
+				
+				<a class="linkItem" href="./en-us/help/readme.htm" target="_blank">Readme</a>
+				<p/>
+			</blockquote>
+	</div>
+
+	<div ID="newboxes2" name="newboxes">
+		<p class="headers">Install</p>
+			<blockquote class="linkSection">
+			
+				<a class="linkItem" onClick=run_script("linux/server/setup")>Jedi Server</a>
+				<p class="linkDescription">Install Jedi Server.</p>
+				
+				<a class="linkItem" onClick=run_script("linux/web/setup")>Jedi Web Server Extension</a>
+				<p class="linkDescription">Install Jedi Web Server Extension.</p>
+
+				<a class="linkItem" onClick=run_script("linux/nlm/setup")>Network License Manager</a>
+				<p class="linkDescription">Configure and manage the license server.</p>
+			</blockquote>
+	</div>
+
+	<div ID="newboxes3" name="newboxes">
+		<p class="headers">Review Product Documentation</p>
+			<blockquote class="linkSection">
+				<a class="linkItem" href="http://www.autodesk.com/wikihelp-infrastructure-map-server" target="_blank">Online Documentation</a>
+				<p class="linkDescription">Online Documentation for Jedi Server.</p>
+			</blockquote>
+	</div>
+			
+	<div ID="newboxes4" name="newboxes">
+			<p class="headers">Support Options</p>
+			<blockquote class="linkSection">
+
+				<a class="linkItem" href="http://www.autodesk.com/infrastructuremapserver-support" target="_blank">Online Support for Jedi Server</a>
+				<p class="linkDescription">Find the most up-to-date support information for this product.</p>
+
+				<a class="linkItem" href="http://usa.autodesk.com/adsk/servlet/index?siteID=123112&id=14963510" target="_blank">Additional Services Information Online</a>
+				<p class="linkDescription">View a list of additional services, including training and options for ongoing support, customization, and consulting.</p>
+
+				<a class="linkItem" href="http://www.autodesk.com/subscription" target="_blank">Subscription Center</a>
+				<p class="linkDescription">Access the Autodesk Subscription Center.</p>
+			</blockquote>
+	</div>
+	
+	<div ID="newboxes5" name="newboxes">
+			<p class="headers">Additional Resources</p>
+			<blockquote class="linkSection">
+
+				<a class="linkItem" href="http://www.autodesk.com/infrastructure-map-server" target="_blank">Jedi Server Product Center</a>
+				<p class="linkDescription">Get the latest information on Jedi Server.</p>
+
+				<a class="linkItem" href="./sample%20data">Additional Sample Data</a>
+				<p class="linkDescription">Access sample data to help you get started with Jedi Server.</p>
+				
+				<a class="linkItem" href="./samples">Additional Applications</a>
+				<p class="linkDescription">Access sample application to help you get started with Jedi Server.</p>
+
+				<a class="linkItem" href="http://discussion.autodesk.com/index2.jspa?categoryID=23" target="_blank">Discussion Forum</a>
+				<p class="linkDescription">Participate in online discussions about Jedi Server.</p>
+
+				<a class="linkItem" href="http://sandbox.mapguide.com/" target="_blank">Best Practice Wiki</a>
+				<p class="linkDescription">Get the latest best practice advice from developers and implementors relating to tuning and other tips and techniques. </p>
+
+				<a class="linkItem" href="http://enterprise.mapguide.com/" target="_blank">Jedi Server Demo Gallery</a>
+				<p class="linkDescription">The demo gallery features various examples of Jedi Server in action.</p>
+		  </blockquote>
+	</div>
+
+		<div ID="newboxes6" name="newboxes">
+			<p class="headers">Welcome</p>
+			<blockquote class="linkSection">
+
+				<p>Thank you for purchasing Jedi Server. </p>
+				<p>In order to get started, simply select <strong>Read First</strong> above, read the pre-installation guides, then continue to <strong>Install</strong> for the installation of the Jedi Server components. For the full Jedi Server <strong>Documentation</strong>, <strong>Support</strong> options and additional <strong>Resources</strong>, simply select those options as required.</p>
+				<p>&nbsp;</p>
+				<p>The Jedi Server team! </p>
+
+			</blockquote>
+		</div>	
+
+	<div ID="copyright">
+			<p class="copyright">Autodesk are registered trademarks or trademarks of Autodesk, Inc., in the USA and/or other countries. <br>All other brand names, product names, or trademarks belong to their respective holders.</p>
+			<p class="copyright">Copyright 2012 Autodesk, Inc. All rights reserved.</p>		</td>
+	</div>
+
+</div>
+
+</body>
+</html>
