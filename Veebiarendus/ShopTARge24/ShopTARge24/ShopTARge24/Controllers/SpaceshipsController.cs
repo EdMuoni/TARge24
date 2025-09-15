@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ShopTARge24.Core.Domain;
 using ShopTARge24.Core.Dto;
 using ShopTARge24.Core.ServiceInterface;
 using ShopTARge24.Data;
@@ -99,18 +100,16 @@ namespace ShopTARge24.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(SpaceshipCreateUpdateViewModel vm)
         {
-            //tuleb dto ja vm omavahel ära teha
-            var dto = new SpaceshipDto();
-
+            var dto = new SpaceshipDto()
             {
-                Id = vm.Id;
-                Name = vm.Name;
-                Classification = vm.Classification;
-                BuiltDate = vm.BuiltDate;
-                Crew = vm.Crew;
-                EnginePower = vm.EnginePower;
-                CreatedAt = vm.CreatedAt;
-                ModifiedAt = vm.ModifiedAt;
+                Id = vm.Id,
+                Name = vm.Name,
+                Classification = vm.Classification,
+                BuiltDate = vm.BuiltDate,
+                Crew = vm.Crew,
+                EnginePower = vm.EnginePower,
+                CreatedAt = vm.CreatedAt,
+                ModifiedAt = vm.ModifiedAt
             };
 
             var result = await _spaceshipServices.Update(dto);
@@ -119,8 +118,8 @@ namespace ShopTARge24.Controllers
             {
                 return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
 
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
